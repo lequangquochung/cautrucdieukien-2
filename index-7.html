@@ -1,0 +1,49 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p>Nghiệm của phương trình là</p>
+<p id="x12"> </p>
+<p id="x1"> </p>
+<p id="x2"> </p>
+
+
+<script type="text/javascript">
+var a = parseFloat(prompt(' nhập  a',''));
+var b = parseFloat(prompt(' nhập  b',''));
+var c = parseFloat(prompt(' nhập  c',''));
+var D = (b*b) - (4* a *c);
+var x1;
+var x2;
+var x12;
+
+if (D<0) {
+	alert('Phương trình vô nghiệm');
+	}else if (D>0){	
+	document.getElementById('x1').innerHTML =  x1 = (-b + Math.sqrt( D )) / (2*a);
+	document.getElementById('x2').innerHTML =  x2 =(-b - Math.sqrt( D )) / (2*a);
+	}else if (D==0) {
+
+	document.getElementById('x1').innerHTML = x1 = -(b/ (2*a));
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

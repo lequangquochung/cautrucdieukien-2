@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+
+<script type="text/javascript">
+var sotienbandau = parseInt(prompt('Nhập số tiền ',''));
+var thoigian = parseInt(prompt('Nhập thời gian gửi ',''));
+var laisuat = 1/100;
+var tienlai = sotienbandau + (sotienbandau * (laisuat * thoigian));
+if (thoigian>0 && thoigian<12) {
+	alert('Số tiền lãi có được ' + tienlai);
+}else if(thoigian>12){
+	tienlai = sotienbandau + (sotienbandau * (laisuat*2 * thoigian));
+	alert('Số tiền lãi có được ' + tienlai);
+}
+
+
+
+
+</script>
+</body>
+</html>
